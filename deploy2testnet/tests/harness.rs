@@ -35,8 +35,8 @@ async fn can_get_contract_id() {
     let wallet = connect_to_wallets().await;
     
     //let (instance, _cid) = deploy(wallet.clone()).await; //for first time use this to deploy contract
-    let cid= ContractId::from_str("contract id").unwrap(); //if you already deployed contract the use this 
-    let instance = MyContract::new(cid.into(), wallet.clone());// cid is contract id (if you already deployed contract the use this )
+    let cid= ContractId::from_str("contract id").unwrap(); //if you already deployed contract, use this 
+    let instance = MyContract::new(cid.into(), wallet.clone());// cid is contract id (if you already deployed contract, use this )
     
     let tx = TxParameters::new(Option::Some(1), None, None);
     let a=instance.methods().increment_counter(1).tx_params(tx).call().await.unwrap();
