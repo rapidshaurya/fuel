@@ -1,5 +1,5 @@
 # Deploy2Testnet Fuel
-
+using harness.rs
 ## Links
 #### [Create Wallet](https://github.com/FuelLabs/forc-wallet)
 #### [ADD Ether to testnet Account](https://faucet-beta-2.fuel.network/)
